@@ -1,0 +1,11 @@
+var name = 'abhinav'
+console.log(name);
+
+var data = 1;
+console.log(typeof data);
+
+var data = 'asadssdasd'
+console.log(typeof data);
+
+var data = true;
+console.log(typeof data);
