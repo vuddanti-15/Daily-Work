@@ -9,3 +9,62 @@ console.log(typeof data);
 
 var data = true;
 console.log(typeof data);
+
+var data =[1,2,3,4,5];
+console.log( data);
+
+var data =[1,2,3,4,5,6];
+console.log(data[3]);
+
+var data={
+    name :'jhon',
+    age : 28
+}
+console.log(data.name,data.age);
+
+function user(){
+    console.log('hello');
+}
+user();
+
+function user(num1){
+    return num1+20;
+
+}
+var output = user(10);
+console.log(output);
+
+var marks = 75;
+if(marks>80){
+    console.log('Grade A')
+}
+else if (marks>55){
+    console.log('Grade B')
+}
+else {
+    console.log('Grade C');
+}
+
+var output =0;
+for(var i=1;i<=10;i++){
+console.log(i);
+}
+
+
+let text1 = "A";
+let text2 = "B";
+let result = text1 < text2;
+
+
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+
+
+let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+const myFunction = function (a, b) {return a * b};
+
+let x = myFunction(4, 3);
