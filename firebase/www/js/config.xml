@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.firebasetest.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>firebase</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">Apache Cordova Team</author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+   <platform name="android">
+    <config-file parent="/*" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <!-- Add other permissions here as needed for your app -->
+    </config-file>
+</platform>
+
+
+    <framework src="com.google.firebase:firebase-bom:32.0.0" />
+
+    <plugin name="onesignal-cordova-plugin" spec="^5.0.0" />
+
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="ShowSplashScreen" value="true" />
+
+    <!-- Firebase Configuration -->
+    <config-file parent="/*" target="google-services.json">
+        <resource-file src="google-services.json" />
+    </config-file>
+
+    <!-- OneSignal Configuration -->
+    <config-file parent="/*" target="onesignal_config.json">
+        <resource-file src="onesignal_config.json" />
+    </config-file>
+</widget>
