@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myapplication-953de": {
+      "hosting": {
+        "firebase-1": [
+          "myapplication-953de"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myapplication-953de"
+  }
+}

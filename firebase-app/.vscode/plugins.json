@@ -1,1 +1,1 @@
-{"plugins":["cordova-plugin-device","cordova-plugin-fcm-with-dependecy-updated"]}
+{"plugins":["cordova-plugin-device","cordova-plugin-firebase-messaging","cordova-support-android-plugin","cordova-android-play-services-gradle-release"]}

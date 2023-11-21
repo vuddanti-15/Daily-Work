@@ -1,0 +1,28 @@
+import requests
+import json
+
+# Define the API URL
+api_url = "https://dummyjson.com/products/1"  # Replace with your API URL
+
+try:
+    # Make an HTTP GET request to the API
+    response = requests.get(api_url)
+
+    # Check if the request was successful (status code 200)
+    if response.status_code == 200:
+        # Parse the JSON response data (assuming the API returns JSON)
+        data = response.json()
+
+        # Process the data as needed
+        # For example, you can print it or save it to a file
+        print("Received data:")
+        print(json.dumps(data, indent=4))
+
+        # Save the data to a file (e.g., as JSON)
+        with open("api_data.json", "w") as file:
+            json.dump(data, file, indent=4)
+        print("Data saved to api_data.json")
+    else:
+        print(f"Request failed with status code: {response.status_code}")
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
